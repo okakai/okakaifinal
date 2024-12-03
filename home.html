@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+
+<style>
+
+.w3-container {
+  font-size: 60px;
+  position: relative;
+  margin-left: 70px;
+ margin-bottom: 20px;
+ padding-top: 10px;
+ top: -30px;
+
+}
+
+h1 {
+  text-align: left;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  margin-top: -200px;
+  margin-left: 27px;
+  border-radius: 3px;
+}
+
+h2 {
+  font-size: 40px;
+  color: white;
+  text-align: center;
+}
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+.search-container {
+  float: right;
+  margin-top: -150px;
+  margin-right: 20px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 900px;
+  position: relative;
+  margin: auto;
+
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.hehe {
+  text-align: left;
+  font-family: "Times New Roman", Times, serif;
+  margin-top: 40px;
+  background-color: purple;
+
+}
+
+div.gallery {
+  border: 10px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  margin-top: 30px;
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.yt {
+      margin-top: 50px;
+      margin-left: 300px;
+      width: 580px;
+      margin-right: 0px;
+      border: 10px solid #ccc;
+      width: 550;
+      height: 340;
+      
+    }
+
+    .map {
+      margin-top: -350px;
+      margin-left: 950px;
+    }
+
+    .yt:hover {
+  border: 1px solid #777;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 20px;
+  width: 50px;
+  align-items: center;
+  text-decoration: none;
+  margin: 10px 2px;
+  align-items: center;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: transparent;
+  color: black;
+}
+
+.fa-twitter {
+  background: transparent;
+  color: black;
+}
+
+.fa-google {
+  background: transparent;
+  color: black;
+}
+
+.fa-linkedin {
+  background: transparent;
+  color: blackblack;
+}
+</style>
+
+
+<!-- Sidebar -->
+<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+  <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+  <a href="HOME.html" class="w3-bar-item w3-button">Home</a>
+  <a href="FDASHBOARD.html" class="w3-bar-item w3-button">Dashboard</a>
+  <a href="#" class="w3-bar-item w3-button">Schedule</a>
+  <a href="#" class="w3-bar-item w3-button">Bookings</a>
+  <a href="#" class="w3-bar-item w3-button">Customer</a>
+  <a href="index.html" class="w3-bar-item w3-button">Log out</a>
+
+</div>
+
+<!-- Page Content -->
+<div class="w3-purple">
+  <button class="w3-button  w3-xlarge" onclick="w3_open()">☰</button>
+  <div class="w3-container">
+    <h1>EVENT SCHEDULING SYSTEM</h1>
+  </div>
+</div>
+
+<div class="logo">
+<img src="logo3.jpg">
+</div>
+<div class="search-container">
+    <input type="text" id="search" placeholder="Search...">
+    <button type="button" id="search-btn">Search</button>
+</div>
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 2</div>
+  <img src="ll.webp" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 2</div>
+  <img src="zz.jpeg" style="width:100%">
+</div>
+
+
+<a class="prev" onclick="plusSlides(-1)"></a>
+<a class="next" onclick="plusSlides(1)"></a>
+
+</div>
+<br>
+
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+</div>
+
+<div class="hehe">
+  <h2>IMAGE GALLERY</h2>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="tennis.jpg">
+      <img src="tennis.jpg" alt="" width="90" height="200">
+    </a>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="bball.webp">
+      <img src="bball.webp" alt="" width="90" height="200">
+    </a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="vball.webp">
+      <img src="vball.webp" alt="" width="90" height="200">
+    </a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="fball.webp">
+      <img src="fball.webp" alt="" width="50" height="200">
+    </a>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<iframe class="yt" width="450" height="345" src="https://www.youtube.com/embed/5wCUo2BJQ2c?si=IPsdWEUn19u13bUR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+</iframe>
+
+</div>
+
+<div class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15784.094419897805!2d124.65245619999999!3d8.497085400000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32fff294a7020c6f%3A0x1f2989d007a021e8!2sCagayan%20De%20Oro!5e0!3m2!1sen!2sph!4v1733124146634!5m2!1sen!2sph" width="550" height="340" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+<a href="#" class="fa fa-facebook"></a>
+  <a href="#" class="fa fa-twitter"></a>
+  <a href="#" class="fa fa-google"></a>
+  <a href="#" class="fa fa-linkedin"></a>
+
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+     
+</body>
+</html> 
